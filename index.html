@@ -1,37 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organiser~</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
     <div class="container">
-        <div class="nav">
-            <div class="TeamName">team Name</div>
-            <div class="options">
-                <ul>
-                <li>MAKAUT</li>
-                <li>WBJEE</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>search</li>
+        <div class="nav bg-[#4F709C] w-screen">
+            
+            <!-- <div class="lg:hidden px-16 text-center py-12">
+                <div class="TeamName text-white mt-2">team Name</div>
+            </div>
+        
+           
+            <div class="hidden lg:flex items-center justify-start px-16"> 
+                <div class="TeamName text-white mt-2">team Name</div>
+            </div> -->
+        
+            <div class="md:hidden px-4">
+                <button id="menuToggle" class="text-white hover:text-gray-200 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        
+            <ul id="menu" class="md:flex md:justify-items-start justify-around space-x-6 align-top py-3 font-mono text-xl font-semibold">
+                <li class="text-white md:hidden">Menu</li>
+                <li class="text-white hover:underline cursor-pointer">MAKAUT</li>
+                <li class="text-white hover:underline cursor-pointer">WBJEE</li>
+                <li class="text-white hover:underline cursor-pointer">About</li>
+                <li class="text-white hover:underline cursor-pointer">Contact</li>
+                <li class="text-white"><i class="ri-search-line"></i></li>
             </ul>
-            </div> 
         </div>
+        
 
 
+        <div class="page1 px-[2vw]">
+            <h1 class="smart text-[10vw] uppercase font-bold tracking-tight leading-none">Go For</h1>
+            <h1 class="work smart text-[10vw] uppercase font-bold tracking-tight leading-none">Smart Work</h1>
+        </div>
         <!-- Hero Section  -->
-        <div class="banner">
-            banner image here
+        <div class="banner min-[100vh] w-screen relative">
+            <div class="play p-[1vw] opacity-0 scale-0 bg-black text-white text-[2vw] uppercase rounded-full fixed">AEC</div>
+          <video src="./Resources/exam_2.mp4" class="video object-fill mb-2" autoplay loop muted></video>
+        
         </div>
        
 
-        <div class="mainItem">
-            Hello Student
+        <!-- bg-gradient-to-r from-blue-500 to-transparent -->
+
+        <div class="greetings bottom-44 left-0 w-screen h-full bg-[#EADBC8] flex justify-between">
+            <div class="animate-slide">
+                <p class="text-black px-4 py-2">Hello Student</p>
+            </div>
+            <div class="animate-slide">
+                <p class="text-black px-4 py-2">স্বাগত</p>
+            </div>
+            <div class="animate-slide">
+                <p class="text-black px-4 py-2">स्वागत</p>
+            </div>
+        </div>
+        
+        <style>
+            @keyframes slide {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-slide {
+        display: inline-block;
+        animation: slide 5s linear infinite;
+        white-space: nowrap;
+    }
+        </style>
+
+
+
+        <div class="page2 flex object-cover justify-evenly mt-4 align-middle h-48 w-52">
+            <div id="first  "><img src="./Resources/first.jpg" alt=""></div>
+            <div id="second"><img src="./Resources/four.jpg" alt=""></div>
+            <div id="third "><img src="./Resources/third.jpg" alt=""></div>
+        </div>
+        
+
+        <!-- <div class=" mainItem mt-4 mx-auto max-w-screen-xl">
+           <p> Hello Student</p>
             
-            <h3>Choose your Department</h3>
+            <h1>Choose your Department</h1>
             <label for="dropdown">Select your choice</label>
             <select id="dropdown" name="choice">
                 <option value="option1">Computer Science and Engineering </option>
@@ -61,6 +126,12 @@
 
         <button>Submit</button>
         <footer> This page belong to us </footer>
-    </div>
-  </body>
-  </html>
+    </div> -->
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
