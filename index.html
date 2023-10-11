@@ -8,6 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+   <style>
+    @keyframes slide {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+.animate-slide {
+display: inline-block;
+animation: slide 5s linear infinite;
+white-space: nowrap;
+}
+</style>
+
 </head>
 <body>
     <div class="container">
@@ -68,23 +85,13 @@
             </div>
         </div>
         
-        <style>
-            @keyframes slide {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
 
-    .animate-slide {
-        display: inline-block;
-        animation: slide 5s linear infinite;
-        white-space: nowrap;
-    }
-        </style>
 
+        <div>
+            <h1>About Us</h1>
+            
+        </div>
+        
 <!-- 
 
         <div class="page2 min-[100vh] w-screen relative flex align-middle justify-around py-[3vw] px-[1vw]">
