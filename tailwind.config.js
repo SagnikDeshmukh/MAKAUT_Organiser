@@ -2,6 +2,9 @@
 module.exports = {
   darkMode: "class",
   content: ["*"],
+  options: {
+    safelist: ['dark']
+  },
   theme: {
     extend: {},
   },
