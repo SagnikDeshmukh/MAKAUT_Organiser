@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-</head>
-<body>
-    <div class="container">
-        <div class="nav bg-[#4F709C] w-screen">
-            <!-- TEAM NAME  -->
 
             <!-- <div class="lg:hidden px-16 text-center py-12">
                 <div class="TeamName text-white mt-2">team Name</div>
@@ -31,39 +24,24 @@
             <!-- HAMBURGER  -->
 
             <div class="md:hidden px-4">
-                <button id="menuToggle" class="text-white hover:text-gray-200 focus:outline-none">
+                <button id="menuToggle" class="text-white hover:text-gray-200 focus:outline-none ">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         
-            <!-- NAV MENU  -->
 
-            <ul id="menu" class="md:flex md:justify-items-start justify-around space-x-6 align-top py-3 font-mono text-xl font-semibold">
-                <li class="text-white md:hidden">Menu</li>
-                <li class="text-white hover:underline cursor-pointer">MAKAUT</li>
-                <li class="text-white hover:underline cursor-pointer">WBJEE</li>
-                <li class="text-white hover:underline cursor-pointer">About</li>
-                <li class="text-white hover:underline cursor-pointer">Contact</li>
-                <li class="text-white"><i class="ri-search-line"></i></li>
             </ul>
         </div>
         
 
-
-        <!-- TAGLINE  -->
-
-        <div class="page1 px-[2vw]">
-            <h1 class="smart text-[10vw] uppercase font-bold tracking-tight leading-none">Go For</h1>
-            <h1 class="work smart text-[10vw] uppercase font-bold tracking-tight leading-none">Smart Work</h1>
-        </div>
-        <!-- Hero Section VIDEO -->
         <div class="banner min-[100vh] w-screen relative">
             <div class="play p-[1vw] opacity-0 scale-0 bg-black text-white text-[2vw] uppercase rounded-full fixed">AEC</div>
           <video src="./Resources/exam_2.mp4" class="video object-fill mb-2" autoplay loop muted></video>
         
         </div>
+
        
 
         <!-- bg-gradient-to-r from-blue-500 to-transparent -->
@@ -71,7 +49,7 @@
         <!-- GREETINGS  -->
         <div class="greetings bottom-44 left-0 w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-between">
             <div class="animate-slide">
-                <p class="text-black px-4 py-2">Hello Student</p>
+                <p class="text-black px-4 py-2 ">Hello Student</p>
             </div>
             <div class="animate-slide">
                 <p class="text-black px-4 py-2">স্বাগত</p>
@@ -97,76 +75,20 @@
         white-space: nowrap;
     }
         </style>
+        
 
-<style>
-    .carousel-caption {
-      opacity: 0; /* Hide the text by default */
-      transition: opacity 0.3s; /* Add a smooth transition effect */
-    }
-  
-    .carousel-item:hover .carousel-caption {
-      opacity: 1; /* Show the text on hover */
-    }
-  </style>
+
+
+
 <!-- 
-sm:w-[50%] sm:h-[100px]     sm:object-fill -->
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade mt-2">
-    <div class="carousel-inner">
-      <div class="carousel-item active relative">
-        <img src="./Resources/CSE.jpg" class="d-block rounded-2xl w-[70%] h-[500px] object-cover mx-auto" alt="CSE">
-        <div class="carousel-caption max-w-[80%] bg-transparent text-white font-extrabold mx-auto text-2xl md:px-8 md:mb-2">
-          Computer Science & Engineering
-          <p class="font-normal text-lg text-orange-700 px-20 md:font-semibold md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi amet aut quisquam dolore facilis odio. Numquam delectus nam nostrum.
-          </p>
-          <button type="button" class="btn btn-outline-success mt-10">Select</button>
-        </div>
-  
-      </div>
-      <div class="carousel-item relative">
-        <img src="./Resources/ECE.jpg" class="d-block rounded-2xl w-[70%] h-[500px] object-cover mx-auto" alt="CSE">
-        <div class="carousel-caption max-w-[80%] bg-transparent text-white font-extrabold mx-auto text-2xl md:px-8 md:mb-2">
-          Electronics & Communication Engineering
-          <p class="font-normal text-lg text-orange-700 px-20 md:font-semibold md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi amet aut quisquam dolore facilis odio. Numquam delectus nam nostrum.
-          </p>
-          <button type="button" class="btn btn-outline-success mt-10">Select</button>
-        </div>
-  
-      </div>
-      <div class="carousel-item relative">
-        <img src="./Resources/ME.jpg" class="d-block rounded-2xl w-[70%] h-[500px] object-cover mx-auto" alt="CSE">
-        <div class="carousel-caption max-w-[80%] bg-transparent text-white font-extrabold mx-auto text-2xl md:px-8 md:mb-2">
-        Mechanical Engineering
-          <p class="font-normal text-lg text-orange-700 px-20 md:font-semibold md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi amet aut quisquam dolore facilis odio. Numquam delectus nam nostrum.
-          </p>
-          <button type="button" class="btn btn-outline-success mt-10">Select</button>
-        </div>
-  
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
-<!-- 
-
         <div class="page2 min-[100vh] w-screen relative flex align-middle justify-around py-[3vw] px-[1vw]">
             <div id="first h-[100%] w-[31%] overflow-hidden "><img src="./Resources/first.jpg" alt=""></div>
             <div id="second h-[100%] w-[31%] overflow-hidden"><img src="./Resources/four.jpg" alt=""></div>
             <div id="third h-[100%] w-[31%] overflow-hidden"><img src="./Resources/third.jpg" alt=""></div>
         </div>
-         -->
+        
 
-        <!-- <div class=" mainItem mt-4 mx-auto max-w-screen-xl">
+        <div class=" mainItem mt-4 mx-auto max-w-screen-xl">
            <p> Hello Student</p>
             
             <h1>Choose your Department</h1>
