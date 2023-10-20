@@ -5,127 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organiser~</title>
     <link rel="stylesheet" href="style.css">
-<!--      HEAD -->
-    <script src="https://cdn.tailwindcss.com"></script>
-     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS config -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+    
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 
-            <!-- <div class="lg:hidden px-16 text-center py-12">
-                <div class="TeamName text-white mt-2">team Name</div>
-            </div>
-        
-           
-            <div class="hidden lg:flex items-center justify-start px-16"> 
-                <div class="TeamName text-white mt-2">team Name</div>
-            </div> -->
-        
-            <!-- HAMBURGER  -->
-
-            <div class="md:hidden px-4">
-                <button id="menuToggle" class="text-white hover:text-gray-200 focus:outline-none ">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        
-
-            </ul>
-        </div>
-        
-
-        <div class="banner min-[100vh] w-screen relative">
-            <div class="play p-[1vw] opacity-0 scale-0 bg-black text-white text-[2vw] uppercase rounded-full fixed">AEC</div>
-          <video src="./Resources/exam_2.mp4" class="video object-fill mb-2" autoplay loop muted></video>
-        
-        </div>
-
-       
-
-        <!-- bg-gradient-to-r from-blue-500 to-transparent -->
-
-        <!-- GREETINGS  -->
-        <div class="greetings bottom-44 left-0 w-screen h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-between">
-            <div class="animate-slide">
-                <p class="text-black px-4 py-2 ">Hello Student</p>
-            </div>
-            <div class="animate-slide">
-                <p class="text-black px-4 py-2">স্বাগত</p>
-            </div>
-            <div class="animate-slide">
-                <p class="text-black px-4 py-2">स्वागत</p>
-            </div>
-        </div>
-        
-        <style>
-            @keyframes slide {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+    <!-- Some styles -->
+    <style>
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
     }
 
-    .animate-slide {
-        display: inline-block;
-        animation: slide 5s linear infinite;
-        white-space: nowrap;
-    }
-        </style>
-        
+        .animate-slide {
+            display: inline-block;
+            animation: slide 5s linear infinite;
+            white-space: nowrap;
+        }
+    </style>
 
+</head>   
+<body>
+    <!-- Header Section -->
+    <section class="w-full overflow-x-hidden relative">
+        <video src="./Resources/exam_2.mp4" class="video object-fill w-full  -z-10 h-[400px] md:h-full lg:h-full" autoplay loop muted>
+        </video>
+        <div class="absolute w-full top-0 z-20">
 
+           <!-- Navbar -->  
+            <nav class="relative px-5 md:px-10 lg:px-20 py-4 flex justify-between items-center bg-gray-200 ">
+                <a class="text-3xl font-bold leading-none" href="#">
+                    <h1>Organiser</h1>
+                </a>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-blue-600 p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                    <li><a class="  hover:text-gray-500" href="#">Home</a></li>
+                    <li class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class=" text-blue-600 font-bold" href="#">About Us</a></li>
+                    <li class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="  hover:text-gray-500" href="#">Services</a></li>
+                    <li class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="  hover:text-gray-500" href="#">Pricing</a></li>
+                    <li class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="  hover:text-gray-500" href="#">Contact</a></li>
+                </ul>
+                <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100  text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
+                <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600  text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
+            </nav>
 
+            <!-- mobile nav bar -->
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                            Organiser
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6  cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4  font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4  font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4  font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4  font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4  font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="pt-6">
+                            <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
+                            <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
+                        </div>
+                        <p class="my-4 text-xs text-center ">
+                            <span>Copyright © 2021</span>
+                        </p>
+                    </div>
+                </nav>
+            </div>
 
-<!-- 
-        <div class="page2 min-[100vh] w-screen relative flex align-middle justify-around py-[3vw] px-[1vw]">
-            <div id="first h-[100%] w-[31%] overflow-hidden "><img src="./Resources/first.jpg" alt=""></div>
-            <div id="second h-[100%] w-[31%] overflow-hidden"><img src="./Resources/four.jpg" alt=""></div>
-            <div id="third h-[100%] w-[31%] overflow-hidden"><img src="./Resources/third.jpg" alt=""></div>
-        </div>
-        
+            <h1 class="text-2xl md:text-6xl lg:text-8xl font-bold ml-4 lg:ml-20 mt-4 text-cyan-600">Go For <br> <span class="text-pink-500">Smart Work</span></h1>
 
-        <div class=" mainItem mt-4 mx-auto max-w-screen-xl">
-           <p> Hello Student</p>
+            <!-- description -->
+            <div class="max-w-[80%] mx-auto text-center md:mt-5 lg:mt-10">
+                <h2 class="text-xl md:text-3xl lg:text-6xl text-black font-extrabold">Welcome to Makaut Organiser</h2>
+                <p class="px-2 lg:text-xl font-semibold mt-1 lg:mt-4 text-black">Here you will get the pdf of all semester's Organiser of All Engineering branch</p>
+                <p class="px-2 lg:text-xl font-semibold mt-1 lg:mt-4 text-black">It will help you alot to pass the Semester Examination</p>
+                <button class=" mt-5 text-white bg-green-600 px-3 py-2 hover:bg-green-800 font-semibold rounded-md">Keep Reading</button>
+            </div>
             
-            <h1>Choose your Department</h1>
-            <label for="dropdown">Select your choice</label>
-            <select id="dropdown" name="choice">
-                <option value="option1">Computer Science and Engineering </option>
-                <option value="option2">Information Technology </option>
-                <option value="option3">Mechanical Engineering </option>
-                <option value="option4">Civil Engineering </option>
-                <option value="option5">Electrical Engineering </option>
-                <option value="option6">Electronics and Commuunication Engineering </option>
-            </select>
-
-
-        <h3>Choose your Sememster</h3>
-        <label for="dropdown">Select your choice</label>
-        <select id="dropdown" name="choice">
-            <option value="option1"> 1</option>
-            <option value="option2"> 2</option>
-            <option value="option3"> 3</option>
-            <option value="option4"> 4</option>
-            <option value="option5"> 5</option>
-            <option value="option6"> 6</option>
-            <option value="option7"> 7</option>
-            <option value="option8"> 8</option>
-           
-        </select>
+        </div>
+        
+        <!-- GREETINGS  -->
+        <div class="greetings w-[100vw]  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-between">
+            <div class="animate-slide ">
+                <p class=" px-4 py-2 ">Hello Student</p>
+            </div>
+            <div class="animate-slide">
+                <p class=" px-4 py-2">স্বাগত</p>
+            </div>
+            <div class="animate-slide">
+                <p class=" px-4 py-2">स्वागत</p>
+            </div>
         </div>
 
+        <!-- About Us Section -->
+        <section>
 
-        <button>Submit</button>
-        <footer> This page belong to us </footer>
-    </div> -->
+        </section>
+    </section>
 
-    <script src="
-    https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js
-"></script>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </body>
